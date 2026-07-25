@@ -1,9 +1,9 @@
 import pandas as pd
 employees = {
-    "ID":[1,2,3,4,5,6,7,8,9,10],
-    "Name":["Anshu","Jay","Alina","Soni","Ava","Baby","Vivek","Radhika","Laila","Diya"],
-    "Department":["IT","HR","Finance","Eco","IT","HR","Eco","Finance","Commerce","Commerce"],
-    "Salary":[60000,54000,52000,53000,54000,55000,56000,57000,58000,59000]
+    "ID":[1,2,3,4,5,6],
+    "Name":["Anshu","Jay","Alina","Soni","Ava","Vivek"],
+    "Department":["IT","HR","IT","Finance","HR","IT"],
+    "Salary":[50000,60000,None,55000,58000,62000]
 }
 df=pd.DataFrame(employees)
 print(df)
@@ -24,3 +24,18 @@ print(df["Salary"].mean())
 highest_salary=df.sort_values(by="Salary",ascending=False)
 print(highest_salary.head(3))
 print(df["Department"].value_counts())
+
+print(df.isnull())
+print(df.isnull().sum())
+df=df.fillna(df["Salary"].mean())
+df["Salary"]+=3000
+df["Bonus"]=df["Salary"] * 0.10
+df["Tax"]=df["Salary"] * 0.05
+print(df)
+
+df.rename(columns={
+          "Department":"Team",
+          "Salary":"Monthly Salary"},inplace=True)
+df.drop(columns=["Tax"],inplace=True)
+
+df.to_csv("employee_report.csv",index=False)
