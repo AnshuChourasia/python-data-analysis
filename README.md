@@ -1,20 +1,23 @@
-# Pandas Basics and Data Analysis
+# Pandas Data Cleaning and Manipulation
 
-This project introduces the fundamentals of **Pandas**, one of the most popular Python libraries for data analysis and manipulation. It demonstrates how to create and work with a DataFrame, filter and sort data, and perform basic data analysis.
+This project focuses on **data cleaning and manipulation using Pandas**, an essential step in every data analysis workflow. It demonstrates how to detect and handle missing values, modify DataFrames, create new columns, and export cleaned data to a CSV file.
 
 ## Features
 
-* 📊 Create a DataFrame from a Python dictionary
-* 👀 Display the dataset
-* 🔍 View the first and last records using `head()` and `tail()`
-* ℹ️ Display dataset information using `info()`
-* 📈 Generate descriptive statistics using `describe()`
-* 🎯 Select single and multiple columns
-* 🔎 Filter rows based on conditions
-* ↕️ Sort data by salary
+* 📊 Create a Pandas DataFrame
+* 🔍 Detect missing values using `isnull()`
+* 📈 Count missing values with `isnull().sum()`
+* 🗑 Remove missing values using `dropna()`
+* ✨ Fill missing values using `fillna()`
+* ➕ Add new columns (Bonus and Tax)
+* ✏️ Modify existing columns
+* 📝 Rename columns
+* ❌ Delete columns
+* 🔃 Sort employees by salary
 * 🏆 Display the top 3 highest-paid employees
 * 💰 Calculate the average salary
 * 👥 Count employees in each department
+* 💾 Export the cleaned DataFrame to a CSV file
 
 ## Technologies Used
 
@@ -30,21 +33,24 @@ The project uses a sample employee dataset containing:
 * Department
 * Salary
 
+Some records intentionally contain missing values (`NaN`) to demonstrate data cleaning techniques.
+
 ## Pandas Concepts Practiced
 
 * `DataFrame`
-* `head()`
-* `tail()`
-* `info()`
-* `describe()`
-* Column Selection
-* Multiple Column Selection
-* Boolean Indexing
-* Multiple Conditions (`&`, `|`)
+* `isnull()`
+* `isnull().sum()`
+* `dropna()`
+* `fillna()`
+* Column Creation
+* Column Modification
+* `rename()`
+* `drop()`
 * `sort_values()`
-* `head(n)`
+* `head()`
 * `mean()`
 * `value_counts()`
+* `to_csv()`
 
 ## How to Run
 
@@ -60,37 +66,40 @@ pip install pandas
 python main.py
 ```
 
-## Sample Operations
+## Project Tasks
 
-* Display all employees
-* View first and last five records
-* Filter employees by salary
-* Filter employees by department
-* Sort employees by salary
-* Find the top 3 highest-paid employees
+* Detect missing values in the dataset
+* Count missing values in each column
+* Handle missing values by removing or replacing them
+* Create **Bonus** and **Tax** columns
+* Increase employee salaries
+* Rename selected columns
+* Delete unnecessary columns
+* Display the top 3 highest-paid employees
 * Calculate the average salary
-* Count employees in each department
+* Count employees by department
+* Save the cleaned dataset as a CSV file
 
 ## Learning Outcomes
 
 Through this project, I learned:
 
-* How to create and use Pandas DataFrames.
-* Selecting and filtering data efficiently.
-* Sorting datasets using Pandas.
-* Performing basic statistical analysis.
-* Using Boolean indexing with multiple conditions.
-* Writing cleaner and shorter code compared to traditional Python loops.
-* Understanding how Pandas simplifies data analysis tasks.
+* How to identify missing values in a dataset.
+* Different techniques for handling missing data.
+* How to add, update, rename, and delete DataFrame columns.
+* How Pandas performs vectorized operations without explicit loops.
+* How to sort and analyze tabular data efficiently.
+* How to export processed data using `to_csv()`.
+* Why data cleaning is an important step before performing analysis.
 
 ## Future Improvements
 
-* Read employee data from CSV files using `read_csv()`
-* Save modified data using `to_csv()`
-* Handle missing values (`NaN`)
-* Add and remove columns
-* Perform grouping and aggregation with `groupby()`
-* Visualize data using Matplotlib and Seaborn
+* Read datasets directly from CSV files using `read_csv()`
+* Perform advanced grouping using `groupby()`
+* Merge multiple datasets
+* Handle duplicate records
+* Visualize cleaned data using Matplotlib and Seaborn
+* Build a complete employee analytics dashboard
 
 ---
 
