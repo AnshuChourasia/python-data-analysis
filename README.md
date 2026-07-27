@@ -68,6 +68,18 @@ python main.py
 * Perform multiple aggregations using `agg()`
 * Convert grouped results into a regular DataFrame using `reset_index()`
 
+# Learning Progress
+
+- ✅ Day 7 - Pandas Basics
+- ✅ Day 8 - Data Cleaning & Manipulation
+- ✅ Day 9 - GroupBy & Aggregation
+- ✅ Day 10 - Data Visualization with Matplotlib
+- ⬜ Day 11 - Seaborn
+- ⬜ Day 12 - NumPy
+- ⬜ Day 13 - Exploratory Data Analysis (EDA)
+- ⬜ Day 14 - Mini Data Analysis Project
+- ⬜ Day 15 - Final Project
+
 ## Learning Outcomes
 
 Through this project, I learned:
