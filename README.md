@@ -99,5 +99,29 @@ Through this project, I learned:
 * Build interactive dashboards
 
 ---
+Data Visualization with Seaborn
 
+## 📌 Overview
+
+I learned the basics of **Seaborn**, a Python library built on top of Matplotlib that provides beautiful and statistical data visualizations with less code.
+
+## 📚 Topics Covered
+
+- Loading built-in datasets
+- Count Plot
+- Bar Plot
+- Histogram
+- Scatter Plot
+- Box Plot
+- Heatmap
+- Correlation Matrix
+- Hue
+- Annotation
+- Color Maps
+
+## 🛠 Libraries Used
+
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
 **Author:** Anshu Chourasia
