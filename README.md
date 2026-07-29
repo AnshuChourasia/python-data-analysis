@@ -124,4 +124,178 @@ I learned the basics of **Seaborn**, a Python library built on top of Matplotlib
 ```python
 import seaborn as sns
 import matplotlib.pyplot as plt
+
+NumPy Basics and Array Operations
+
+## 📌 Overview
+
+I learned **NumPy (Numerical Python)**, a Python library used for fast numerical computations. NumPy provides powerful array operations and mathematical functions that are widely used in Data Science, Machine Learning, and Scientific Computing.
+
+---
+
+## 📚 Topics Covered
+
+- Introduction to NumPy
+- Creating NumPy Arrays
+- Vectorized Operations
+- Array Indexing
+- Array Slicing
+- Mathematical Functions
+- 2D Arrays (Matrices)
+- Array Shape
+
+---
+
+## 🛠 Library Used
+
+```python
+import numpy as np
+```
+
+---
+
+## Concepts Learned
+
+### 1. Creating Arrays
+
+Created arrays using:
+
+```python
+np.array()
+np.zeros()
+np.ones()
+np.arange()
+```
+
+Example:
+
+```python
+arr = np.array([10,20,30,40,50])
+```
+
+---
+
+### 2. Vectorized Operations
+
+Performed mathematical operations without using loops.
+
+```python
+arr + 10
+arr * 3
+arr - 5
+arr / 2
+```
+
+---
+
+### 3. Mathematical Functions
+
+Used built-in NumPy functions:
+
+```python
+np.sum(arr)
+np.mean(arr)
+np.max(arr)
+np.min(arr)
+np.std(arr)
+```
+
+These functions help perform calculations quickly on arrays.
+
+---
+
+### 4. Indexing and Slicing
+
+Accessing elements:
+
+```python
+arr[0]
+arr[-1]
+```
+
+Slicing arrays:
+
+```python
+arr[:3]
+arr[2:]
+arr[1:4]
+```
+
+---
+
+### 5. 2D Arrays (Matrices)
+
+Created a matrix:
+
+```python
+matrix = np.array([
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+])
+```
+
+Accessed:
+
+- Individual elements
+- Entire rows
+- Entire columns
+
+Example:
+
+```python
+matrix[0]
+matrix[:,1]
+matrix.shape
+```
+
+---
+
+## Practical Exercise Completed
+
+Implemented a NumPy program that:
+
+- Created arrays
+- Performed vectorized arithmetic
+- Calculated:
+  - Sum
+  - Mean
+  - Maximum
+  - Minimum
+  - Standard Deviation
+- Created and accessed a 3×3 matrix
+- Generated arrays using:
+  - `np.zeros()`
+  - `np.ones()`
+  - `np.arange()`
+
+---
+
+## Key Learnings
+
+- NumPy is much faster than Python lists for numerical computations.
+- Arrays are the core data structure of NumPy.
+- Vectorized operations eliminate the need for loops.
+- NumPy provides powerful built-in mathematical functions.
+- 2D arrays allow easy matrix manipulation.
+- Indexing and slicing work similarly to Python lists but extend naturally to multiple dimensions.
+
+---
+
+## Learning Outcome
+
+After completing Day 12, I can:
+
+- Work with NumPy arrays.
+- Perform fast mathematical operations.
+- Use vectorized calculations.
+- Create and manipulate matrices.
+- Apply built-in statistical functions.
+- Access and slice 1D and 2D arrays efficiently.
+
+---
+
+---
+
+
 **Author:** Anshu Chourasia
