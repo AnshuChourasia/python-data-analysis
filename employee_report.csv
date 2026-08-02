@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 07b56821467fbc5444361f2bec660b6d4e51d09d
 ID,Name,Team,Monthly Salary,Bonus
 1,Anshu,IT,53000.0,5300.0
 2,Jay,HR,63000.0,6300.0
@@ -5,3 +9,15 @@ ID,Name,Team,Monthly Salary,Bonus
 4,Soni,Finance,58000.0,5800.0
 5,Ava,HR,61000.0,6100.0
 6,Vivek,IT,65000.0,6500.0
+<<<<<<< HEAD
+=======
+=======
+ID,Name,Team,Monthly Salary,Bonus
+1,Anshu,IT,53000.0,5300.0
+2,Jay,HR,63000.0,6300.0
+3,Alina,IT,60000.0,6000.0
+4,Soni,Finance,58000.0,5800.0
+5,Ava,HR,61000.0,6100.0
+6,Vivek,IT,65000.0,6500.0
+>>>>>>> 386088a (Initial commit)
+>>>>>>> 07b56821467fbc5444361f2bec660b6d4e51d09d
